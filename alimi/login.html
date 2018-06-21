@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+   
+    body{
+        background-color:aliceblue;
+    }
+    footer{
+       
+ height:60px;
+        color: white;
+         }
+        header{
+            height:60px;
+        }
+    </style>
+    <title>Log in</title>
+    </head>
+    <body>
+    <header id="header" style="background-color: darkcyan" align="right">
+        <a href="homepage.html" alt="home">Home</a>|
+                <a href="aboutUs.html" alt="about the mentoring program">About Us</a>|
+                <a href="apply.html" alt="apply for the mentoring program">Apply</a>|
+                <a href="contactUs.html" alt="Our Contacts">Contact Us</a>|
+                <a href="Login.html">Login</a>
+        </header>
+        
+        <div class="users form" align="center">
+		<form action="/mentoring/users/login" id="UserLoginForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>    <fieldset>
+        <legend><h5>Please enter your email and password</h5></legend>
+      	<div class="row">
+        	<div class="small-5 columns">
+        		<label for="right-label-user" class="right inline">Email</label>
+            </div></div>
+    		<div class="small-7 columns">
+        		<div class="input text"><input name="data[User][username]" placeholder="Enter your email address" id="right-label-user" style="width:250px" maxlength="50" type="text"/></div>        	</div>
+        
+        <div class="row">
+        	<div class="small-5 columns">
+        		<label for="right-label-pass" class="right inline">Password</label>
+            </div></div>
+        	<div class="small-7 columns">
+        		<div class="input password"><input name="data[User][password]" placeholder="Enter your password" id="right-label-pass" style="width:250px" type="password"/></div>        	</div>
+            	
+    </fieldset>
+    	<div class="row">
+    		<div class="small-1 small-centered columns">
+				<div class="submit"><input  class="button" role="button" aria-label="submit form" type="submit" value="Login"/></div>			
+            </div></div>
+			</form>
+        </div>
+  <footer id="footer" style="background-color: darkcyan" align="right">
+         <a href="homepage.html" alt="home">Home</a>|
+                <a href="aboutUs.html" alt="about the mentoring program">About Us</a>|
+                <a href="apply.html" alt="apply for nectar">Apply</a>|
+                <a href="contactUs.html" alt="Our Contacts">Contact Us</a>|
+                <a href="Login.html">Login</a>
+    </footer>
+    </body>
+</html>

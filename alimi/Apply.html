@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+ 
+     body{
+        background-color:aliceblue;
+    }
+    footer{
+       
+ height:60px;
+        color: white;
+         }
+        header{
+            height:60px;
+        }
+    </style>
+    <title>Apply</title>
+    </head>
+    <body>
+     <header id="header" style="background-color:darkcyan"  align="right">
+         <a href="homepage.html" alt="home">Home</a>|
+                <a href="aboutUs.html" alt="about the mentoring program">About Us</a>|
+                <a href="apply.html" alt="apply for the mentoring program">Apply</a>|
+                <a href="contactUs.html" alt="Our Contacts">Contact Us</a>|
+                <a href="Login.html">Login</a>
+        </header>
+        <h1>mentor application</h1>
+    
+<form action="mentoring application" id="MentorAddForm" enctype="multipart/form-data" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+        <fieldset>
+            <legend><h4><i>Mentor application</i></h4></legend>
+        <div class="row" class="small-6 columns" class="input text required">
+            <label for="MentorFirstName">First Name</label><input placeholder="Please enter your first name" maxlength="50" type="text" id="MentorFirstName"/></div>
+            <div class="row" class="small-6 columns" class="input text required">
+            <label for="MentorLastName">Last Name</label><input placeholder="please enter your last name" maxlength="50" type="text" id="MentorLastName">
+            </div>
+            <div  class="input text required">
+		<label for="MentorLocalstreetaddress">Local Address</label>  <textarea name="txtBody" id="AddressBody" cols="50"
+ rows="3"> </textarea></div>
+            <div class="small-3 columns">
+			<div class="input text required"><input name="data[Mentor][Mentor_localcity]"  placeholder="City" maxlength="255" type="text" id="MentorLocalcity"/></div>		</div>
+		<div class="small-3 columns">
+			<div class="input text required"><input name="data[Mentor][Mentor_localstate]"  placeholder="State" maxlength="255" type="text" id="MentorLocalstate"/></div>		</div>
+		<div class="small-3 columns" class="input select required">
+    <select name="data[Mentor][country_id]"  placeholder="Country" id="StudentCountryId">
+            <option value="1">Algeria</option>
+<option value="2">Angola</option>
+<option value="3">Benin</option>
+        <option value="4">Botswana</option>
+        <option value="5">Burkina Faso</option>
+        <option value="6">Burundi</option>
+        <option value="7">Cabo Verde</option>
+        <option value="8">Cameroon</option>
+        <option value="9">Central African Republic</option>
+        <option value="10">Chad</option>
+<option value="11">Comoros</option>
+    <option value="12">Democratic Republic of Congo</option>
+    <option value="13">Republic of congo</option>
+    <option value="14">Cote d'Ivoire</option>
+    <option value="15">Djibouti</option>
+    <option value="16">Egypt</option>
+    <option value="17">Equitorial Guinea</option>
+    <option value="18">Eritrea</option>
+    <option value="19">Eswatini</option>
+    <option value="20">Ethiopia</option>
+    <option value="21">Gambon</option>
+    <option value="22">Ghana</option>
+    <option value="22">Guinea</option>
+    <option value="23">Guinea-Bissau</option>
+    <option value="24">Kenya</option>
+    <option value="25">Lesotho</option>
+    <option value="26">Liberia</option>
+    <option value="27">libya</option>
+    <option value="28">Madagascar</option>
+    <option value="29">Malawi</option>
+        <option value="30">Mali</option>    
+            <option value="31">Mauritania</option>
+            <option value="32">Mauritius</option>
+            <option value="33">Morocco</option>
+            <option value="34">Mozambique</option>
+            <option value="35">Namibia</option>
+            <option value="36">Nigeria</option>
+            <option value="37">Rwanda</option>
+            <option value="38">Senegal</option>
+            <option value="39">Seychelles</option>
+            <option value="40">Sierra leone</option>
+            <option value="41">Somalia</option>
+            <option value="42">South Africa</option>
+            <option value="43">South Sudan</option>
+            <option value="44">Sudan</option>
+            <option value="45">Tanzania</option>
+            <option value="46">Togo</option>
+            <option value="47">Tunisia</option>
+        <option value="48">Uganda</option>
+            <option value="49">Zambia</option>
+            <option value="50">Zimbabwe</option>
+            </select>
+            </div>
+<div class="row">
+				<div class="small-12 columns">
+					<div class="input checkbox"><input type="hidden" name="data[mentor][sameaddress]" id="mentorSameaddress_" value="0"/><input type="checkbox" name="data[mentor][sameaddress]"  onClick="toggle(&quot;mentorSameaddress&quot;, &quot;mentorPermstreetaddress&quot;, &quot;mentorPermcity&quot;, &quot;mentorPermstate&quot;, &quot;mentorPermcountryId&quot;)" value="1" id="mentorSameaddress"/><label for="mentorSameaddress">Check if the <b>Permanent Address</b> is the same with <b>Local Address</b></label></div>				</div>
+			</div>
+
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="input text"><label for="mentorPermstreetaddress">Permanent Address</label><input name="data[mentor][mentor_permstreetaddress]"  placeholder="Please enter street address" maxlength="255" type="text" id="MentorPermstreetaddress"/></div>		</div>
+		<div class="small-3 columns">
+			<div class="input text"><input name="data[mentor][mentor_permcity]"  placeholder="City" maxlength="255" type="text" id="mentorPermcity"/></div>		</div>
+		<div class="small-3 columns">
+            <div class="input text"><input name="data[mentor][mentor_permstate]"  placeholder="State" maxlength="255" type="text" id="mentorPermstate"/></div></div></div>
+            <div class="small-3 columns">
+			<div class="input select"><select name="data[Student][permcountry_id]"  placeholder="County" id="StudentPermcountryId">
+              <option value="1">Algeria</option>
+<option value="2">Angola</option>
+<option value="3">Benin</option>
+        <option value="4">Botswana</option>
+        <option value="5">Burkina Faso</option>
+        <option value="6">Burundi</option>
+        <option value="7">Cabo Verde</option>
+        <option value="8">Cameroon</option>
+        <option value="9">Central African Republic</option>
+        <option value="10">Chad</option>
+<option value="11">Comoros</option>
+    <option value="12">Democratic Republic of Congo</option>
+    <option value="13">Republic of congo</option>
+    <option value="14">Cote d'Ivoire</option>
+    <option value="15">Djibouti</option>
+    <option value="16">Egypt</option>
+    <option value="17">Equitorial Guinea</option>
+    <option value="18">Eritrea</option>
+    <option value="19">Eswatini</option>
+    <option value="20">Ethiopia</option>
+    <option value="21">Gambon</option>
+    <option value="22">Ghana</option>
+    <option value="22">Guinea</option>
+    <option value="23">Guinea-Bissau</option>
+    <option value="24">Kenya</option>
+    <option value="25">Lesotho</option>
+    <option value="26">Liberia</option>
+    <option value="27">libya</option>
+    <option value="28">Madagascar</option>
+    <option value="29">Malawi</option>
+        <option value="30">Mali</option>    
+            <option value="31">Mauritania</option>
+            <option value="32">Mauritius</option>
+            <option value="33">Morocco</option>
+            <option value="34">Mozambique</option>
+            <option value="35">Namibia</option>
+            <option value="36">Nigeria</option>
+            <option value="37">Rwanda</option>
+            <option value="38">Senegal</option>
+            <option value="39">Seychelles</option>
+            <option value="40">Sierra leone</option>
+            <option value="41">Somalia</option>
+            <option value="42">South Africa</option>
+            <option value="43">South Sudan</option>
+            <option value="44">Sudan</option>
+            <option value="45">Tanzania</option>
+            <option value="46">Togo</option>
+            <option value="47">Tunisia</option>
+        <option value="48">Uganda</option>
+            <option value="49">Zambia</option>
+            <option value="50">Zimbabwe</option>
+                </select></div></div>
+        <div class="row">
+		<div class="small-12 columns">
+			<div class="input text required"><label for="mentorPhoneno">Phone Number:</label><input name="data[mentor][mentor_phoneno]"  placeholder="Please enter your phone number" maxlength="50" type="text" id="mentorPhoneno"/></div>		</div>
+	</div>
+    <div class="row">
+		<div class="small-7 columns">
+            <div class="input select required"><label for="Mentorlocationid"> Where are you currently located in</label><input name="data[mentor][mentor_locationId]"  placeholder="Please your current location" maxlength="50" type="text" id="mentorlocationId"/></div></div></div>
+           <div class="row">
+		<div class="small-12 columns">
+			<div class="input file"><label for="mentorImage">Upload your profile image (image format: gif, jpeg, png, jpg)</label><input type="file" name="data[mentor][mentor_image]"   id="MentorImage"/></div>		</div>
+	</div>
+	 </fieldset>
+    <fieldset>
+	<legend><h5>Create Username and Password</h5></legend>
+			
+	<div class="row">
+		<div class="small-6 columns">
+			<div class="input text required"><label for="UserUsername">Email</label><input name="data[User][username]"  placeholder="Please enter a valid email address..." maxlength="50" type="text" id="UserUsername"/></div>		</div>
+		<div class="small-6 columns">
+			<div class="input text required"><label for="UserVerifyusername">Confirm Email</label><input name="data[User][verifyusername]"  placeholder="Please please confirm email..." type="text" id="UserVerifyusername"/></div>		</div>
+	</div>
+	<div class="row">
+		<div class="small-6 columns">
+			<div class="input password required"><label for="UserPassword">Password</label><input name="data[User][password]"  placeholder="password" type="password" id="UserPassword"/></div>		</div>
+		<div class="small-6 columns">
+			<div class="input password required"><label for="UserRepass">Confirm Password</label><input name="data[User][repass]"  placeholder="Please confirm password" type="password" id="UserRepass"/></div>		</div>
+	</div>
+    </fieldset>
+			<div class="row">
+				<div class="small-12 columns">
+					<div class="submit"><input  class="button" role="button" aria-label="submit form" type="submit" value="Submit"/></div>				</div>
+        </div>
+    </form>
+     <h1>Mentee application</h1>  
+        <form action="mentee application" id="MenteeAddForm" enctype="multipart/form-data" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+        <fieldset>
+            <legend><h4><i>Mentee application</i></h4></legend>
+        <div class="row" class="small-6 columns" class="input text required">
+            <label for="MenteeFirstName">First Name</label><input placeholder="Please enter your first name" maxlength="50" type="text" id="MenteeFirstName"/></div>
+            <div class="row" class="small-6 columns" class="input text required">
+            <label for="MenteeLastName">Last Name</label><input placeholder="please enter your last name" maxlength="50" type="text" id="MenteeLastName">
+            </div>
+            <div  class="input text required">
+		<label for="MenteeLocalstreetaddress">Local Address</label>  <textarea name="txtBody" id="AddressBody" cols="50"
+ rows="3"> </textarea></div>
+            <div class="small-3 columns">
+			<div class="input text required"><input name="data[Mentee][Mentee_localcity]"  placeholder="City" maxlength="255" type="text" id="MenteeLocalcity"/></div>		</div>
+		<div class="small-3 columns">
+			<div class="input text required"><input name="data[Mentee][Mentee_localstate]"  placeholder="State" maxlength="255" type="text" id="MenteeLocalstate"/></div>		</div>
+		<div class="small-3 columns" class="input select required">
+    <select name="data[Mentee][country_id]"  placeholder="Country" id="menteeCountryId">
+            <option value="1">Algeria</option>
+<option value="2">Angola</option>
+<option value="3">Benin</option>
+        <option value="4">Botswana</option>
+        <option value="5">Burkina Faso</option>
+        <option value="6">Burundi</option>
+        <option value="7">Cabo Verde</option>
+        <option value="8">Cameroon</option>
+        <option value="9">Central African Republic</option>
+        <option value="10">Chad</option>
+<option value="11">Comoros</option>
+    <option value="12">Democratic Republic of Congo</option>
+    <option value="13">Republic of congo</option>
+    <option value="14">Cote d'Ivoire</option>
+    <option value="15">Djibouti</option>
+    <option value="16">Egypt</option>
+    <option value="17">Equitorial Guinea</option>
+    <option value="18">Eritrea</option>
+    <option value="19">Eswatini</option>
+    <option value="20">Ethiopia</option>
+    <option value="21">Gambon</option>
+    <option value="22">Ghana</option>
+    <option value="22">Guinea</option>
+    <option value="23">Guinea-Bissau</option>
+    <option value="24">Kenya</option>
+    <option value="25">Lesotho</option>
+    <option value="26">Liberia</option>
+    <option value="27">libya</option>
+    <option value="28">Madagascar</option>
+    <option value="29">Malawi</option>
+        <option value="30">Mali</option>    
+            <option value="31">Mauritania</option>
+            <option value="32">Mauritius</option>
+            <option value="33">Morocco</option>
+            <option value="34">Mozambique</option>
+            <option value="35">Namibia</option>
+            <option value="36">Nigeria</option>
+            <option value="37">Rwanda</option>
+            <option value="38">Senegal</option>
+            <option value="39">Seychelles</option>
+            <option value="40">Sierra leone</option>
+            <option value="41">Somalia</option>
+            <option value="42">South Africa</option>
+            <option value="43">South Sudan</option>
+            <option value="44">Sudan</option>
+            <option value="45">Tanzania</option>
+            <option value="46">Togo</option>
+            <option value="47">Tunisia</option>
+        <option value="48">Uganda</option>
+            <option value="49">Zambia</option>
+            <option value="50">Zimbabwe</option>
+            </select>
+            </div>
+<div class="row">
+				<div class="small-12 columns">
+					<div class="input checkbox"><input type="hidden" name="data[mentee][sameaddress]" id="menteeSameaddress_" value="0"/><input type="checkbox" name="data[mentee][sameaddress]"  onClick="toggle(&quot;menteeSameaddress&quot;, &quot;menteePermstreetaddress&quot;, &quot;menteePermcity&quot;, &quot;menteePermstate&quot;, &quot;menteePermcountryId&quot;)" value="1" id="menteeSameaddress"/><label for="menteeSameaddress">Check if the <b>Permanent Address</b> is the same with <b>Local Address</b></label></div>				</div>
+			</div>
+
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="input text"><label for="menteePermstreetaddress">Permanent Address</label><input name="data[mentee][mentee_permstreetaddress]"  placeholder="Please enter street address" maxlength="255" type="text" id="MenteePermstreetaddress"/></div>		</div>
+		<div class="small-3 columns">
+			<div class="input text"><input name="data[mentee][mentee_permcity]"  placeholder="City" maxlength="255" type="text" id="menteePermcity"/></div>		</div>
+		<div class="small-3 columns">
+            <div class="input text"><input name="data[mentee][mentee_permstate]"  placeholder="State" maxlength="255" type="text" id="menteePermstate"/></div></div></div>
+            <div class="small-3 columns">
+			<div class="input select"><select name="data[mentee][permcountry_id]"  placeholder="County" id="menteePermcountryId">
+              <option value="1">Algeria</option>
+<option value="2">Angola</option>
+<option value="3">Benin</option>
+        <option value="4">Botswana</option>
+        <option value="5">Burkina Faso</option>
+        <option value="6">Burundi</option>
+        <option value="7">Cabo Verde</option>
+        <option value="8">Cameroon</option>
+        <option value="9">Central African Republic</option>
+        <option value="10">Chad</option>
+<option value="11">Comoros</option>
+    <option value="12">Democratic Republic of Congo</option>
+    <option value="13">Republic of congo</option>
+    <option value="14">Cote d'Ivoire</option>
+    <option value="15">Djibouti</option>
+    <option value="16">Egypt</option>
+    <option value="17">Equitorial Guinea</option>
+    <option value="18">Eritrea</option>
+    <option value="19">Eswatini</option>
+    <option value="20">Ethiopia</option>
+    <option value="21">Gambon</option>
+    <option value="22">Ghana</option>
+    <option value="22">Guinea</option>
+    <option value="23">Guinea-Bissau</option>
+    <option value="24">Kenya</option>
+    <option value="25">Lesotho</option>
+    <option value="26">Liberia</option>
+    <option value="27">libya</option>
+    <option value="28">Madagascar</option>
+    <option value="29">Malawi</option>
+        <option value="30">Mali</option>    
+            <option value="31">Mauritania</option>
+            <option value="32">Mauritius</option>
+            <option value="33">Morocco</option>
+            <option value="34">Mozambique</option>
+            <option value="35">Namibia</option>
+            <option value="36">Nigeria</option>
+            <option value="37">Rwanda</option>
+            <option value="38">Senegal</option>
+            <option value="39">Seychelles</option>
+            <option value="40">Sierra leone</option>
+            <option value="41">Somalia</option>
+            <option value="42">South Africa</option>
+            <option value="43">South Sudan</option>
+            <option value="44">Sudan</option>
+            <option value="45">Tanzania</option>
+            <option value="46">Togo</option>
+            <option value="47">Tunisia</option>
+        <option value="48">Uganda</option>
+            <option value="49">Zambia</option>
+            <option value="50">Zimbabwe</option>
+                </select></div></div>
+        <div class="row">
+		<div class="small-12 columns">
+			<div class="input text required"><label for="menteePhoneno">Phone Number:</label><input name="data[mentee][mentee_phoneno]"  placeholder="Please enter your phone number" maxlength="50" type="text" id="menteePhoneno"/></div>		</div>
+	</div>
+    <div class="row">
+		<div class="small-7 columns">
+            <div class="input select required"><label for="Menteelocationid"> Where are you currently located in</label><input name="data[mentee][mentee_locationId]"  placeholder="Please your current location" maxlength="50" type="text" id="menteelocationId"/></div></div></div>
+            <div class="row">
+		<div class="small-12 columns">
+			<div class="input textarea required"><label for="StudentStudentQ2">For us to better match you, please provide us information about your career goals and aspirations and what you want in a mentor. Please be as specific and detailed as possible.</label><textarea name="data[Student][student_q2]"  placeholder="Please type your answer..." cols="30" rows="6" id="StudentStudentQ2"></textarea></div>		</div>
+	</div>
+
+           <div class="row">
+		<div class="small-12 columns">
+			<div class="input file"><label for="menteeImage">Upload your profile image (image format: gif, jpeg, png, jpg)</label><input type="file" name="data[mentee][mentee_image]"   id="MenteeImage"/></div>		</div>
+	</div>
+	 </fieldset>
+    <fieldset>
+	<legend><h5>Create Username and Password</h5></legend>
+			
+	<div class="row">
+		<div class="small-6 columns">
+			<div class="input text required"><label for="UserUsername">Email</label><input name="data[User][username]"  placeholder="Please enter a valid email address..." maxlength="50" type="text" id="UserUsername"/></div>		</div>
+		<div class="small-6 columns">
+			<div class="input text required"><label for="UserVerifyusername">Confirm Email</label><input name="data[User][verifyusername]"  placeholder="Please please confirm email..." type="text" id="UserVerifyusername"/></div>		</div>
+	</div>
+	<div class="row">
+		<div class="small-6 columns">
+			<div class="input password required"><label for="UserPassword">Password</label><input name="data[User][password]"  placeholder="password" type="password" id="UserPassword"/></div>		</div>
+		<div class="small-6 columns">
+			<div class="input password required"><label for="UserRepass">Confirm Password</label><input name="data[User][repass]"  placeholder="Please confirm password" type="password" id="UserRepass"/></div>		</div>
+	</div>
+    </fieldset>
+			<div class="row">
+				<div class="small-12 columns">
+					<div class="submit"><input  class="button" role="button" aria-label="submit form" type="submit" value="Submit"/></div>				</div>
+        </div>
+    </form>
+           <footer id="footer" style="background-color: darkcyan" align="right">
+         <a href="homepage.html" alt="home">Home</a>|
+                <a href="aboutUs.html" alt="about the mentoring program">About Us</a>|
+                <a href="apply.html" alt="apply for nectar">Apply</a>|
+                <a href="contactUs.html" alt="Our Contacts">Contact Us</a>|
+                <a href="Login.html">Login</a>
+    </footer>
+    </body>
+</html>
